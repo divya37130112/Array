@@ -1,0 +1,18 @@
+let Array = [1,2,3,9,6,12,15,20];
+let odd = [];
+let even =[];
+for(let i=0;i<Array.length;i++){
+    if(Array[i]%2==0){
+        even.push(Array[i]);
+    }
+    else{
+        odd.push(Array[i]);
+    }
+}
+let x = (even.sort(function(a,b){
+    return a-b;
+}));
+let y = (odd.sort(function(a,b){
+    return b-a;
+}));
+console.log(x+","+y);
